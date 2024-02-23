@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var visibility: NavigationSplitViewVisibility = .detailOnly
+    
     var body: some View {
-        NavigationSplitView {
+        NavigationSplitView(columnVisibility: $visibility) {
             Color.red
         } content: {
             Color.green
