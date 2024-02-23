@@ -19,7 +19,7 @@ struct ContentView: View {
         } detail: {
             Color.blue
         }
-
+        .navigationSplitViewStyle(.prominentDetail)
     }
 }
 
