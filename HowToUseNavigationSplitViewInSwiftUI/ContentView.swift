@@ -11,6 +11,8 @@ struct ContentView: View {
     var body: some View {
         NavigationSplitView {
             Color.red
+        } content: {
+            Color.green
         } detail: {
             Color.blue
         }
